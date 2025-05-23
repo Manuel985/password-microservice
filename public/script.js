@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     errorDiv.classList.add('hidden');
 
     try {
-      const response = await fetch('http://localhost:3000/generate-password', {
+      const response = await fetch('/generate-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

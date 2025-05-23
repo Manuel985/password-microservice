@@ -17,7 +17,7 @@ app.post('/generate-password', async (req, res) => {
 
   if (isNaN(length) || length < 4 || length > 100) {
     return res.status(400).json({ 
-      error: 'Legth must be between 4 and 100' 
+      error: 'Length must be between 4 and 100' 
     });
   }
 
