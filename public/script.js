@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     errorDiv.classList.add('hidden');
 
-    //BASE_URL = "https://password-microservice.onrender.com"
+    BASE_URL = "https://password-microservice.onrender.com"
 
     try {
-      const response = await fetch('${process.env_API_URL}/generate-password', {
+      const response = await fetch(BASE_URL + '/generate-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
